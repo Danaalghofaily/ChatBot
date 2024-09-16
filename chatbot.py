@@ -50,7 +50,9 @@ def handle_conversation():
         response = openai.ChatCompletion.create(
             model = 'gpt-4',
             messages = [
-                {"role": "system", "content": 'You are a highly skilled AI, answer the questions given within a maximum of 1000 characters.'},
+                {"role": "system", "content": 
+                 'You are a highly skilled AI,
+                 answer the questions given within a maximum of 1000 characters.'},
                 {"role": "user", "content": transcript_result}
             ]
         )
